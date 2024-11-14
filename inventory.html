@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Inventory Management</h1>
+
+        <nav>
+            <a class="button" href="pos.html">Go to POS System</a>
+        </nav>
+
+        
+
+        <!-- Inventory Management Section -->
+        <div class="inventory">
+            <h2>Inventory</h2>
+            <ul id="product-list"></ul>
+        </div>
+
+        <!-- Add Product Form -->
+        <div class="add-product-form">
+            <h2>Add New Product</h2>
+            <form id="add-product-form">
+                <input type="text" id="product-name" placeholder="Product Name" required />
+                <input type="number" id="product-price" placeholder="Price" step="0.01" required />
+                <input type="number" id="product-quantity" placeholder="Stock Quantity" required />
+                <button type="submit">Add Product</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="inventory.js"></script>
+</body>
+</html>
